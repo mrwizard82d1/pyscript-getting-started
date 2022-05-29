@@ -10,6 +10,10 @@
     <body>
         <h1>Let's plot some random numbers</h1>
         <div id="plot"/>
+        <!--
+            The `py-script` attribute, `output="plot"`, cause the runtime environment to "capture"
+            the last value in the script and to execute the statement, `pyscript.write('plot', fig)`.
+        -->
         <py-script output="plot">
             import numpy as np
             import matplotlib.pyplot as plt
